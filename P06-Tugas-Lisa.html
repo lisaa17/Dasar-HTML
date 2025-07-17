@@ -1,0 +1,43 @@
+<!-- file: P06-3-PopUp -->
+
+<!-- Nama : Lisa Rahmawati -->
+<!-- Npm  : 232104008-->
+
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>PopUp Box JavaScript</title>
+       <script type="text/JavaScript">
+        alert("Welcome to Lisaa's Calculator Page :v")
+           function Pengurangan() {
+                bil1 = parseInt(prompt("Masukkan Angka Pertama", ""));
+                bil2 = parseInt(prompt("Masukkan Angka Kedua", ""));
+                hasil = bil1 - bil2;
+                alert(bil1 + " - " + bil2 + " = " + hasil)
+               }
+           function Perkalian() {
+               bil1 = parseInt(prompt("Masukkan Angka Pertama", ""));
+               bil2 = parseInt(prompt("Masukkan Angka Kedua", ""));
+               hasil = bil1 * bil2;
+               alert(bil1 + " x " + bil2 + " = " + hasil)
+               }
+               
+           function Pembagian() {
+                bil1 = parseInt(prompt("Masukkan Angka Pertama", ""));
+                bil2 = parseInt(prompt("Masukkan Angka Kedua", ""));
+                hasil = bil1 / bil2;
+                alert(bil1 + " : " + bil2 + " = " + hasil)
+               }
+
+       </script>
+   </head>
+   <body>
+        <h4> Nama : Lisa Rahmawati<br>
+             NPM  : 232104008
+        </h4>
+
+       <input type="buttom" onclick="Pengurangan()" value="Pengurangan" />
+       <input type="buttom" onclick="Perkalian()" value="Perkalian" />
+       <input type="buttom" onclick="Pembagian()" value="Pembagian" />
+   </body>
+</html>
