@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>P09-2: Animasi jQuery</title>
+       <script src="jquery-3.6.1.min.js"></script>
+       <script>
+           $(document).ready(function(){
+               // Menyembunyikan semua kotak saat halaman dimuat
+               $(".kotak").hide();
+
+               // Event untuk tombol
+               $("#tombol1").click(function(){
+                   $("#kotak1").fadeToggle("slow");
+               });
+               $("#tombol2").click(function(){
+                   $("#kotak2").fadeToggle("slow");
+               });
+               $("#tombol3").click(function(){
+                   $("#kotak3").fadeToggle("slow");
+               });
+           });
+       </script>
+       <style type="text/css">
+            body {
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+            .kotak {
+                width: 200px;
+                height: auto;
+                display: none; /* Semua kotak disembunyikan */
+                padding: 25px;
+                margin: 25px; /*Posisi tengah*/
+                color: white;
+                font-size: 14px;
+                line-height: 1.5;
+                border-radius: 5px;
+            }
+            .merah { background-color: rgb(181, 109, 140); }
+            .hijau { background-color: rgb(166, 80, 117); }
+            .biru  { background-color: rgb(138, 42, 83); }
+       </style>
+   </head>
+   <body>
+    <h2>IPHONE 15</h2>
+    <img src="iphone_15_pro.png" alt="Contoh Gambar" style="width:200px; height:auto; margin-bottom:20px;">
+    <p>Fungsi fadeToggle akan menyembunyikan dan menampilkan sebuah elemen secara bergantian.</p>
+    <button id="tombol1">Deskripsi</button>
+    <button id="tombol2">Spesifikasi</button>
+    <button id="tombol3">Fitur Unggulan</button>
+    <br><br>
+    <div id="kotak1" class="kotak merah">
+        <strong>DESKRIPSI<BR></strong>
+        iPhone 15 menghadirkan Dynamic Island, kamera Utama 48 MP, dan USB-C. Dynamic Island menampilkan info penting di atas segalanya. iPhone 15 ini juga didukung dalam desain aluminium dan kaca berwarna yang tangguh.
+    </div>
+    <div id="kotak2" class="kotak hijau">
+        <strong>WARNA:</strong><br>
+        - Titanium Hitam<br>
+        - Titanium Putih<br>
+        - Titanium Biru<br>
+        - Titanium Alami
+    </div>
+    <div id="kotak3" class="kotak biru">
+        <strong>FITUR</strong><br>
+        OS (Saat Rilis)     iOS 17
+        Sensor              Face ID, akselerometer, cahaya, giroskop, proksimitas, kompas, barometer <br>
+        Jack 3.5mm          Tidak Ada <br>
+        WARNA               Hitam, Biru, Hijau, Kuning, Pink <br>
+        Fitur Lainnya       - Speaker stereo <br>
+                            - Dukungan Ultra Wideband 2 (UWB) <br>
+                            - Dukungan pengiriman pesan darurat SOS via satelit
+    </div>
+   </body>
+</html>
