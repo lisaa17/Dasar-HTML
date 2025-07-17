@@ -1,0 +1,89 @@
+<!-- file: P04-contoh-tugas.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas PAW: CSS</title>
+	<link rel="stylesheet" href="P04-Tugas-Lisa-text.css">
+	<link rel="stylesheet" href="P04-Tugas-Lisa-table.css">
+  <style>
+    body    { width:500px;}
+    input[type=text]        { width: 100%;
+                            padding: 10px;
+                            margin: 10px 0;
+                            border: solid pink 2px;
+                            border-radius: 4px;
+                        }
+    input[type=button], input[type=submit], inout[type=reset] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    input:focus {
+        border: solid green 2px;
+        background-color: teal;
+        color: white;
+    }
+  </style>
+	
+</head>
+<body>
+	<img src="unjaya.jpg" width="50" height="50">
+	<h2>Mahasiswa Universitas Jenderal Achmad Yani</h2>
+	<p>Berikut ini adalah daftar mahasiswa dan mata kuliah S-1 Teknologi Informasi angkatan 2021. Apabila terdapat kekurangan, tersedia form dibawah untuk menambahkan data mahasiswa</p>
+	<h3>Daftar Mahasiswa S-1 Teknologi Informasi</h3>
+  <table>
+    <tr>
+       <th>NPM</th><th>Nama Lengkap</th><th>Asal</th>
+    </tr>
+    <tr>
+      <td>212104001</td><td>Andi Susanto</td><td>Jakarta</td>
+    </tr>
+    <tr>
+      <td>212104002</td><td>Joko Susetyo</td><td>Semarang</td>
+    </tr>
+    <tr>
+      <td>212104003</td><td>Maya Putri</td><td>Bandung</td>
+    </tr>
+    <tr>
+      <td>212104003</td><td>Prita Setyaningrum</td><td>Surabaya</td>
+    </tr>
+  </table>	
+	<h3>Daftar Mata Kuliah S-1 Sistem Informasi</h3>
+  <table>
+    <tr>
+       <th>Kode</th><th>Nama Mata Kuliah</th><th>Dosen</th>
+    </tr>
+    <tr>
+      <td>PAW</td><td>Pengembangan Aplikasi Web</td><td>Wawan</td>
+    </tr>
+    <tr>
+      <td>PAM</td><td>Pengembangan Aplikasi Mobile</td><td>Wiwin</td>
+    </tr>
+    <tr>
+      <td>PAD</td><td>Pengembangan Aplikasi Desktop</td><td>Wowo</td>
+    </tr>
+    <tr>
+      <td>PAK</td><td>Praktikum Aplikasi Komputer</td><td>Woles</td>
+    </tr>
+  </table>	
+	<h3>Form Tambahan Data Mahasiswa</h3>
+	<form>
+		<label for="umum">NPM :</label>
+		<input type="text" name="npm" >	
+		<label for="nama">Nama Lengkap :</label>
+		<input type="text" name="nama" >
+		<label for="nama">Asal :</label>
+		<input type="text" name="asal" >
+		<input type="submit" value="Simpan">
+	</form>
+	<h3>Penyusun</h3>
+	<p>Nama...................: Lisa Rahmawati<br/>
+	NPM.....................: 232104008<br/>
+	Program Studi......: <a href="https://ti.unjaya.ac.id/">Teknologi Informasi</a></p>
+</body>
+</html>
+
