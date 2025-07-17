@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P07-Tugas-Lisa</title>
+        <script type="text/javascript">
+            function Warna(kode) {
+                document.getElementById("teks_warna").style.color = kode;
+                document.getElementById("teks_warna").innerHTML = "Gambar Berubah";
+            }
+            function Warna2(kode) {
+                document.getElementById("teks_warna").style.color = kode;
+                document.getElementById("teks_warna").innerHTML = "Mengubah Gambar";
+            }
+
+            function TeksOver() {
+                document.getElementById("teks_ganti").innerHTML = "Mengubah Gambar";
+            }
+            
+            function TeksOut() {
+                document.getElementById("teks_ganti").innerHTML = "Ganti Gambar";
+            }
+
+            function Tampil() {
+                var x = document.getElementById("gambar");
+                x.src = "gambar1.jpg";
+            }
+
+            function GambarOver() {
+                document.getElementById("gambar_ganti");
+                document.getElementById("gambar").src = "gambar1.jpg"; 
+            }
+
+            function GambarOut() {
+                document.getElementById("gambar_ganti");
+                document.getElementById("gambar").src = "gambar2.jpg";  
+            }
+
+            function Sembunyi() {
+                document.getElementById("gambar").style.visibility = "hidden";
+            }
+
+            function TampilGambar() {
+                document.getElementById("gambar").style.visibility = "visible";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="teks_warna" onMouseOver="Warna('red')" onMouseOut="Warna2('black')"><b>Mengubah Gambar</b></h1>
+
+        <input type="button" onclick="TampilGambar()" value="Tampilkan" />
+        <input type="button" onclick="Sembunyi()" value="Sembunyikan" /> <br>
+
+        <img id="gambar" src="gambar2.jpg" width="400" height="300" onMouseOver="GambarOver()" onMouseOut="GambarOut()">
+
+        <p id="gambar_ganti"></p>
+
+    </body>
+</html>
