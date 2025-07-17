@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>JavaScript: Cek Form</title>
+       <style>
+            #digit {
+                color: white;
+                background: rgb(180, 99, 122);
+                padding: 5px;
+                width: 100px;
+                border-radius: 15px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            footer {
+                text-align: center;
+                color: rgb(180, 99, 122)
+            }
+       </style>
+
+       <script type="text/javascript">
+           function cekNama() {
+               if (document.isian.nama.value === "") {
+                   alert("Anda belum mengisi Nama");
+               }
+           }
+           function cekNim() {
+               if (document.isian.nim.value === "") {
+                   alert("Anda belum mengisi NIM");
+               }
+           }
+           function cekAngkatan() {
+               if (document.isian.angkatan.value === "") {
+                   alert("Anda belum mengisi Angkatan");
+               }
+           }
+           function cekAlamat() {
+               if (document.isian.alamat.value === "") {
+                   alert("Anda belum mengisi Alamat");
+               }
+           }
+
+           function terimaKasih() {
+               if (document.isian.nama.value !== "" &&
+                   document.isian.nim.value !== "" &&
+                   document.isian.angkatan.value !== "" &&
+                   document.isian.alamat.value !== "") {
+                   konfirmAngkatan();
+               } else {
+                   alert("Mohon lengkapi data terlebih dahulu");
+               }
+           }
+
+           function konfirmAngkatan() {
+               var angkatan = parseInt(document.isian.angkatan.value, 10);
+
+               if (angkatan <= 2020) {
+                   alert("Anda terlambat lulus");
+               } else if (angkatan == 2023) {
+                   alert("Anda telah memasuki tahun ke-2 di kampus ini");
+               } else if (angkatan == 2021 || angkatan == 2021) {
+                   alert("Segera persiapkan kelulusan Anda");
+               } else if (angkatan == 2022) {
+                    alert("Segera persiapkan kelulusan Anda");
+               } else {
+                   alert("Terima kasih telah mengisi data.");
+               }
+           }
+       </script>
+   </head>
+   <body>
+       <p><em>Waktu saat ini:</em>
+           <div id="digit"></div>
+           <script type="text/javascript" src="waktu.js"></script>
+       </p>
+
+       <form name="isian" method="post">
+           <fieldset>
+               <legend>Isikan Data Anda</legend>
+               <ul>
+                   <li>
+                       <label for="nama">Nama Lengkap</label><br>
+                       <input name="nama" class="text" type="text" onBlur="cekNama()">
+                   </li>
+                   <li>
+                       <label for="nim">NIM</label><br>
+                       <input name="nim" class="text" type="text" onBlur="cekNim()">
+                   </li>
+                   <li>
+                       <label for="angkatan">Angkatan</label><br>
+                       <input name="angkatan" class="text" type="text" onBlur="cekAngkatan()">
+                   </li>
+                   <li>
+                       <label for="alamat">Alamat</label><br>
+                       <input name="alamat" class="text" type="text" onBlur="cekAlamat()">
+                   </li>
+               </ul>
+           </fieldset>
+           <fieldset class="button">
+               <input name="submit" type="button" value="Simpan" onClick="terimaKasih()" />
+               <input name="reset" type="reset" value="Reset" />
+           </fieldset>
+       </form>
+       <footer>
+        <p>Lisa Rahmawati <br>
+        Teknologi Informasi <br>
+        Universitas Jenderal Achmad Yani Yogyakarta
+        </p>
+    </footer>
+   </body>
+</html>
