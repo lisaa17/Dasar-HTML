@@ -1,0 +1,70 @@
+<!-- file: P03-Tugas-Lisa.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAW 03-Tugas: From</title>
+        <style type="text/css">
+            label       { font-weight: bold}
+            legend      { font-style: italic}
+            fieldset    { width: 200px }
+        </style>
+    <body>
+        <fieldset>
+        <h3 style="color: rgb(155, 15, 15);">Identitas Calon Mahasiswa</h3>
+        <hr size="1" color="blue">
+        <form>
+                <p><label for="nama">Nama Lengkap<span style="color: red;">*</span></label><br>
+                <input type="text" size="100" name="nama"></p>
+                <p><label for="nama">Masukkan nama lengkap Anda sesuai akta kelahiran yang berlaku</label></p>
+                <table width="100%" cellpadding="2" cellspacing="5">
+                <tr>
+                    <td>
+                        <p><label for="kelamin">Jenis Kelamin<span style="color: red;">*</span></label><br>
+                        <input type="radio" name="kelamin" value="laki">Laki-laki<br>
+                        <input type="radio" name="kelamin" value="Perembpuan">Perempuan</p>
+                    </td>
+                    <td>
+                        <p><label for="nama">Tempat Lahir<span style="color: red;">*</span></label><br>
+                        <input type="text" size="20" name="tempat"></p>
+                    </td>
+                    <td>
+                        <p><label for="nama">Tanggal Lahir<span style="color: red;">*</span></label><br>
+                        <input type="date" size="20" name="tanggal"></p>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <p><label for="agama">Agama<span style="color: red;">*</span></label><br>
+                        <select size="1" name="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="konghuchu">Konghuchu</option>
+                        </select></p>
+                    </td>
+                    <td>
+                        <p><label for="negara">Kewarganegaraan<span style="color: red;">*</span></label><br>
+                        <select size="1" name="negara">
+                            <option value="indonesia">Indonesia</option>
+                            <option value="tiongkok">Tiongkok</option>
+                            <option value="malaysia">Malaysia</option>
+                            <option value="korea">Korea</option>
+                            <option value="australia">Australia</option>
+                            <option value="Jepang">Jepang</option>
+                        </select></p>
+                    </td>
+                </tr>
+                    <td colspan="3">
+                    <p><label for="alamat">Alamat Lengkap<span style="color: red;">*</span></label><br>
+                    <textarea rows="4" cols="20" name="alamat"></textarea></p>
+                    <input type="submit" value="Submit" name="isian" style="background-color:rgb(81, 118, 186); color: white ; border: rgb(80, 117, 186); padding: 7px 19px; font-size: 12px; border-radius: 5px;">
+                    </td>
+                </table>
+        </form>
+    </fieldset>
+    </body>
+    </head>
+</html>
